@@ -1,6 +1,4 @@
-library flutter_powerkit;
-
-import 'package:flutter/material.dart';
+import 'package:flutter_powerkit/flutter_powerkit.dart';
 
 extension ContextExtensions on BuildContext {
   /// Sizes
@@ -25,4 +23,9 @@ extension ContextExtensions on BuildContext {
   TextStyle? get titleLarge => Theme.of(this).textTheme.titleLarge;
   TextStyle? get titleTextStyle => Theme.of(this).appBarTheme.titleTextStyle;
   TextStyle? get headlineSmall => Theme.of(this).textTheme.headlineSmall;
+
+  /// helpers
+  void hideKeyboard() => FocusScope.of(this).unfocus();
+
+  /// Navigation
 }

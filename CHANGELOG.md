@@ -1,3 +1,6 @@
-## 0.0.1
+## 1.1.0
 
-* TODO: Describe initial release.
+- Added context and string extensions
+- Added App version checker
+- Added playstore update checker
+- Added splash screen

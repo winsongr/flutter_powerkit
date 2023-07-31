@@ -1,7 +1,4 @@
 library flutter_powerkit;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'extensions/context_extensions.dart';
+export 'extensions/string_extensions_dart.dart';

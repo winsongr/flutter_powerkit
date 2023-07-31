@@ -1,9 +1,10 @@
 name: flutter_powerkit
 description: Empower Your Flutter Projects with Essential Utilities!
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/winsongr/flutter_powerkit
 repository: https://github.com/winsongr/flutter_powerkit
 issue_tracker: https://github.com/winsongr/flutter_powerkit/issues
+license: BSD-3-Clause
 
 environment:
   sdk: '>=3.0.6 <4.0.0'

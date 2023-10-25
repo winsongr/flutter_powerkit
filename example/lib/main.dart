@@ -1,3 +1,4 @@
+import 'package:example/home/home_page.dart';
 import 'package:flutter_powerkit/flutter_powerkit.dart';
 // import 'package:flutter_powerkit/flutter_powerkit.dart';
 
@@ -11,6 +12,15 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: FlutterPowerKitSplash());
+    return MaterialApp(home: FlutterPowerKitSplash(
+      onNavigationComplete: () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => HomePage(),
+          ),
+        );
+      },
+    ));
   }
 }

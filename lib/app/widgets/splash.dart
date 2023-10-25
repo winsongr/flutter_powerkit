@@ -20,8 +20,9 @@ class FlutterPowerKitSplash extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    _navigateToNextScreen(context);
-
+    Future.delayed(Duration(milliseconds: duration), () {
+      if (onNavigationComplete != null) onNavigationComplete!();
+    });
     return Scaffold(
       body: Center(
         child: Column(
@@ -46,11 +47,5 @@ class FlutterPowerKitSplash extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  void _navigateToNextScreen(BuildContext context) async {
-    await Future.delayed(Duration(milliseconds: duration), () {
-      if (onNavigationComplete != null) onNavigationComplete!();
-    });
   }
 }
